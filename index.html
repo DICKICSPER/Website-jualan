@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png" type="image/png">
+    <title>GameStore - Jual Beli Akun Game Terpercaya</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>🎮 CompeStore</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#beranda" class="nav-link">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#produk" class="nav-link">Produk</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#tentang" class="nav-link">Tentang</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#kontak" class="nav-link">Kontak</a>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Jual Beli Akun Game Terpercaya</h1>
+                <p>Dapatkan akun game impian Anda dengan harga terbaik dan kualitas terjamin. Kami menyediakan berbagai akun game populer dengan rank tinggi dan item rare.</p>
+                <div class="hero-buttons">
+                    <a href="#produk" class="btn btn-primary">Lihat Produk</a>
+                    <a href="#kontak" class="btn btn-secondary">Hubungi Kami</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="game-icons">
+                    <div class="game-icon">🎮</div>
+                    <div class="game-icon">🏆</div>
+                    <div class="game-icon">💎</div>
+                    <div class="game-icon">⚔️</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="produk" class="products">
+        <div class="container">
+            <h2 class="section-title">Produk Kami</h2>
+            <p class="section-subtitle">Pilihan akun game terbaik dengan harga kompetitif</p>
+            
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="game-logo">📱</div>
+                        <div class="product-badge">Populer</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Mobile Legends</h3>
+                        <p class="product-desc">Akun Epic/Legend dengan hero lengkap dan skin rare</p>
+                        <div class="product-features">
+                            <span class="feature">✓ Rank Epic/Legend</span>
+                            <span class="feature">✓ 50+ Heroes</span>
+                            <span class="feature">✓ Skin Rare</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">Rp 150.000</span>
+                        </div>
+                        <button class="btn-buy" onclick="buyProduct('Mobile Legends Epic/Legend', '150000')">Beli Sekarang</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="game-logo">🔫</div>
+                        <div class="product-badge">Terlaris</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>PUBG Mobile</h3>
+                        <p class="product-desc">Akun Conqueror dengan skin senjata dan outfit eksklusif</p>
+                        <div class="product-features">
+                            <span class="feature">✓ Rank Conqueror</span>
+                            <span class="feature">✓ Skin Senjata Rare</span>
+                            <span class="feature">✓ Outfit Eksklusif</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">Rp 200.000</span>
+                        </div>
+                        <button class="btn-buy" onclick="buyProduct('PUBG Mobile Conqueror', '200000')">Beli Sekarang</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="game-logo">🔥</div>
+                        <div class="product-badge">Hot</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Free Fire</h3>
+                        <p class="product-desc">Akun Sultan dengan diamond melimpah dan bundle eksklusif</p>
+                        <div class="product-features">
+                            <span class="feature">✓ 100K+ Diamond</span>
+                            <span class="feature">✓ Bundle Eksklusif</span>
+                            <span class="feature">✓ Pet Rare</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">Rp 300.000</span>
+                        </div>
+                        <button class="btn-buy" onclick="buyProduct('Free Fire Sultan', '300000')">Beli Sekarang</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="game-logo">⚔️</div>
+                        <div class="product-badge">Premium</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Genshin Impact</h3>
+                        <p class="product-desc">Akun AR 55+ dengan 5-star characters dan weapon</p>
+                        <div class="product-features">
+                            <span class="feature">✓ AR 55+</span>
+                            <span class="feature">✓ 10+ 5-Star Chars</span>
+                            <span class="feature">✓ 5-Star Weapons</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">Rp 400.000</span>
+                        </div>
+                        <button class="btn-buy" onclick="buyProduct('Genshin Impact AR55+', '400000')">Beli Sekarang</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="game-logo">🎯</div>
+                        <div class="product-badge">Eksklusif</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Call of Duty Mobile</h3>
+                        <p class="product-desc">Akun Legendary dengan weapon skin mythic dan operator</p>
+                        <div class="product-features">
+                            <span class="feature">✓ Rank Legendary</span>
+                            <span class="feature">✓ Mythic Weapons</span>
+                            <span class="feature">✓ Rare Operators</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">Rp 250.000</span>
+                        </div>
+                        <button class="btn-buy" onclick="buyProduct('Call of Duty Mobile Legendary', '250000')">Beli Sekarang</button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="game-logo">🏆</div>
+                        <div class="product-badge">Spesial</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Valorant</h3>
+                        <p class="product-desc">Akun Immortal dengan skin collection lengkap</p>
+                        <div class="product-features">
+                            <span class="feature">✓ Rank Immortal</span>
+                            <span class="feature">✓ Premium Skins</span>
+                            <span class="feature">✓ Battle Pass</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">Rp 350.000</span>
+                        </div>
+                        <button class="btn-buy" onclick="buyProduct('Valorant Immortal', '350000')">Beli Sekarang</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="tentang" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Tentang GameStore</h2>
+                    <p>GameStore adalah platform terpercaya untuk jual beli akun game di Indonesia. Kami telah melayani ribuan gamer sejak 2020 dengan komitmen memberikan layanan terbaik dan akun game berkualitas tinggi.</p>
+                    
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="feature-icon">🔒</div>
+                            <div class="feature-content">
+                                <h4>100% Aman</h4>
+                                <p>Semua transaksi dijamin aman dengan sistem keamanan berlapis</p>
+                            </div>
+                        </div>
+                        
+                        <div class="about-feature">
+                            <div class="feature-icon">✅</div>
+                            <div class="feature-content">
+                                <h4>Akun Original</h4>
+                                <p>Semua akun yang kami jual adalah akun original dan legal</p>
+                            </div>
+                        </div>
+                        
+                        <div class="about-feature">
+                            <div class="feature-icon">🎯</div>
+                            <div class="feature-content">
+                                <h4>Harga Terjangkau</h4>
+                                <p>Dapatkan akun game impian dengan harga yang kompetitif</p>
+                            </div>
+                        </div>
+                        
+                        <div class="about-feature">
+                            <div class="feature-icon">📞</div>
+                            <div class="feature-content">
+                                <h4>Support 24/7</h4>
+                                <p>Tim customer service siap membantu Anda kapan saja</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">5000+</div>
+                        <div class="stat-label">Pelanggan Puas</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">10000+</div>
+                        <div class="stat-label">Akun Terjual</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Game Tersedia</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">99%</div>
+                        <div class="stat-label">Tingkat Kepuasan</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontak" class="contact">
+        <div class="container">
+            <h2 class="section-title">Hubungi Kami</h2>
+            <p class="section-subtitle">Siap membantu Anda mendapatkan akun game impian</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h4>WhatsApp</h4>
+                            <p>+62 822-1454-9889</p>
+                            <a href="https://wa.me/6282214549889" class="contact-link" target="_blank">Chat Sekarang</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2841464e47684f49454d5b5c475a4d064b4745">[email&#160;protected]</a></p>
+                            <a href="/cdn-cgi/l/email-protection#c4adaaa2ab84a3a5a9a1b7b0abb6a1eaa7aba9" class="contact-link">Kirim Email</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">🕒</div>
+                        <div class="contact-details">
+                            <h4>Jam Operasional</h4>
+                            <p>Senin - Minggu</p>
+                            <p>08:00 - 22:00 WIB</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Kirim Pesan</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Nama Lengkap" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="gameType" required>
+                                <option value="">Pilih Game</option>
+                                <option value="Mobile Legends">Mobile Legends</option>
+                                <option value="PUBG Mobile">PUBG Mobile</option>
+                                <option value="Free Fire">Free Fire</option>
+                                <option value="Genshin Impact">Genshin Impact</option>
+                                <option value="Call of Duty Mobile">Call of Duty Mobile</option>
+                                <option value="Valorant">Valorant</option>
+                                <option value="Lainnya">Lainnya</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Pesan Anda" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Kirim ke WhatsApp</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🎮 GameStore</h3>
+                    <p>Platform jual beli akun game terpercaya di Indonesia</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">🐦</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Layanan</h4>
+                    <ul>
+                        <li><a href="#produk">Jual Akun</a></li>
+                        <li><a href="#produk">Beli Akun</a></li>
+                        <li><a href="#tentang">Tentang Kami</a></li>
+                        <li><a href="#kontak">Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Game Populer</h4>
+                    <ul>
+                        <li><a href="#produk">Mobile Legends</a></li>
+                        <li><a href="#produk">PUBG Mobile</a></li>
+                        <li><a href="#produk">Free Fire</a></li>
+                        <li><a href="#produk">Genshin Impact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Kontak</h4>
+                    <p>📱 +62 822-1454-9889</p>
+                    <p>📧 <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="eb82858d84ab8c8a868e989f84998ec5888486">[email&#160;protected]</a></p>
+                    <p>🕒 08:00 - 22:00 WIB</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 CompeStore. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="./script.js"></script>
+</body>
+
+</html>
